@@ -26,6 +26,7 @@ get ('/artists/:id') do
     erb(:'artist/show')
 end
 
+#edit
 get('/artists/:id/edit') do
     @artist=Artist.find(params[:id])
     erb(:'artist/update')

@@ -38,5 +38,9 @@ class Album
     return result
   end
 
+  def update(options)
+    sql = "UPDATE albums SET name = '#{options['name']}' WHERE id = '#{options['id']}'"
+    SqlRunner.run(sql)
+  end
 
 end
