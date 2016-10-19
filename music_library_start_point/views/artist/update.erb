@@ -1,0 +1,15 @@
+<h1>Add an artist</h1>
+
+<form action="/artists/<%= @artist.id %>" method="post">
+
+<p>
+<label for="banana">
+    Name of Artist
+</label>
+<input type="text" name="name" id="banana" value="<%= @artist.name %>">
+</p>
+
+<input type="submit" value="Edit Artist">
+
+<input type="hidden" name="_method" value="put">
+</form>
