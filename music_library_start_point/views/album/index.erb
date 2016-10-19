@@ -1,11 +1,23 @@
-<h1>Albums</h1>
+<h2>Albums</h2>
 
-<ul>
+<table id="albums">
 
 <% @albums.each do |album| %>
 
-<li><%= album.name %></li>
+<tr>
+    <td>
+        <a href="/albums/<%= album.id %>"><img src="/images/<%= album.artwork %>"  alt ="Artwork for <%= album.name %>">
+    </td>
+    <td>
+        <a href="/albums/<%= album.id %>"><%= album.name %>
+    </td>
+    <td>
+        <a href="/albums/<%= album.id %>/edit">Edit/Delete</a>
+    </td>
+</tr>
 
 <% end %>
 
-</ul>
+</table>
+
+<p><a href="/albums/new">Add new album</a></p>

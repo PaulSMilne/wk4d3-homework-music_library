@@ -23,6 +23,7 @@ end
 # show
 get ('/artists/:id') do
     @artist = Artist.find(params[:id])
+    @albums = @artist.albums
     erb(:'artist/show')
 end
 
@@ -38,3 +39,9 @@ put ('/artists/:id') do
     @artist.update(params)
     redirect ("/artists")
 end
+
+delete ('/artists/:id') do
+    Artist.destroy(params[:id])
+    redirect to("/artists")
+end
+

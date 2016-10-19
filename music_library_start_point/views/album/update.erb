@@ -1,0 +1,31 @@
+<h2>Edit an Album</h2>
+
+<form action="/albums/<%= @album.id %>" method="post">
+
+<p>
+<label for="banana">
+    Name of Album
+</label>
+<input type="text" name="name" id="banana" value="<%= @album.name %>">
+</p>
+
+<p>
+<label for="peach">
+    Artwork file
+</label>
+<input type="text" name="name" id="peach" value="<%= @album.artwork %>">
+</p>
+
+
+<p>
+<label for="apple">
+    ID of Artist (required)
+</label>
+
+<input type="number" name="artist_id" id="apple" value="<%= @album.artist_id %>">
+</p>
+
+<input type="submit" value="Edit Album">
+
+<input type="hidden" name="_method" value="put">
+</form>

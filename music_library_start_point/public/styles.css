@@ -1,0 +1,32 @@
+body {background-color:#fff; color: #000000;font-family: helvetica; }
+
+div#content {
+    margin-top:25;
+    border-top:#e6e6e6 10px solid;
+    padding:0 100px 0 100px;}
+
+a:link, a:visited {color:#404040}
+
+h1, h2, h3 {font-weight:normal;}
+div#home {
+    background-image: url('/images/albumcover.png');
+    font-family: 'Permanent Marker', cursive;
+    height:450px;
+    margin:25px auto;
+    padding:25px;
+    width:695px;
+}
+p#navigation {font-size: .8em;}
+
+table#albums img {height:150px;width:150px;}
+
+#albums td {border:#e6e6e6 solid 1px;vertical-align: bottom;padding:5px;}
+
+table#albums td:first-child {padding:0;}
+table#albums td:last-child {font-size:.75em;}
+
+img.singleartwork {height:200px;width:200px;}
+
+span.small {font-size:.75em;}
+
+ul li {margin-bottom:10px;}

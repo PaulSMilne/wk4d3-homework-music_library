@@ -5,16 +5,16 @@ Last week we created a Music app with albums and artists. Create a RESTFul Sinat
 
 Create routes for albums and artists:
 
-- Index
-- New
-- Create
-- Show
+x- Index
+x- New
+x- Create
+x- Show
 
 ## Extensions
 
 These are extension revision topics and do not need to be completed:
 
-- Create Update and Delete pages for albums / artists
-- Add images for albums
+x- Create Update and Delete pages for albums / artists
+x- Add images for albums
 - Add some CSS
 - Create 'library' route to show all artists and albums!
